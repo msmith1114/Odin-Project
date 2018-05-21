@@ -32,7 +32,7 @@ def knight_moves(start,finish)
     if current.x == finish[0] && current.y == finish[1]
       found = true
       path = moves(start,finish,current)
-      return "You made it in #{path.length} moves, here is your path: " +
+      return "You made it in #{path.length-1} moves, here is your path: " +
       "#{path.reverse}"
     else
     current.make_children

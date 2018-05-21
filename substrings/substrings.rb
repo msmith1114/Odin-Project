@@ -8,5 +8,5 @@ def substrings(words,dict)
  dictHash
 end
 
-substrings("below", dictionary)
-substrings("Howdy partner, sit down! How's it going?", dictionary)
+puts substrings("below", dictionary)
+puts substrings("Howdy partner, sit down! How's it going?", dictionary)
