@@ -101,11 +101,12 @@ class LinkedList
       @tail = nil
     end
     current = @head
-    until current.next_node === @tail
+    until current.next_node == @tail
       current = current.next_node
     end
     @tail = current
     @tail.next_node = nil
+    @size -= 1
 
   end
 
@@ -126,7 +127,6 @@ linked = LinkedList.new
 linked.append(5)
 
 linked.prepend(2)
-
 linked.prepend(1)
 
 linked.append(7)
@@ -136,6 +136,13 @@ linked.prepend(3)
 linked.append(4)
 linked.prepend(9)
 linked.append(8)
+puts linked.find(1)
+puts linked.at(2)
+puts linked.contains?(2)
+puts linked.contains?(10)
 #9 3 1 2 5 7 4 8
-
+linked.pop
+linked.append(1)
+puts linked.to_s
+linked.pop
 puts linked.to_s
