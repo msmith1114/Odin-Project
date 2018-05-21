@@ -1,0 +1,38 @@
+---
+- !ruby/object:Hangman
+  word:
+  - l
+  - i
+  - t
+  - h
+  - o
+  - l
+  - o
+  - g
+  - i
+  - c
+  - a
+  - l
+  word_array:
+  - l
+  - i
+  - _
+  - _
+  - o
+  - l
+  - o
+  - _
+  - i
+  - _
+  - _
+  - l
+  misses: 5
+  guesses:
+  - l
+  - o
+  - p
+  - e
+  - i
+  - f
+  - s
+  - m
